@@ -5,14 +5,14 @@ dotnet core testing API
 clone repo
 restore packages
 
-#Modify connection string 
+# Modify connection string 
 appsettings.json
 
 
-#from VS 
+#f rom VS 
 Tools>PackagaManager Console
  Add-Migration InitialCreate
  Update-Database
  
- #swagger
+ # swagger
  /swagger
