@@ -11,7 +11,9 @@ namespace dotnetAPI.Models
         [Key]
         public int APIId { get; set; }
         [MaxLength(500)]
+        [Required]
         public string Url { get; set; }
+        [Required]
         public List<Verb> Verbs { get; set; }
 
 

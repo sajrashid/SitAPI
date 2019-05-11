@@ -18,7 +18,12 @@ namespace dotnetAPI.Models
             : base(options)
         { }
 
-       //public DbSet<ApiList> ApiList { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Api>()
+                .HasAlternateKey(a => new { a.Url});
+        }
+
         public DbSet<Api> API { get; set; }
 
         public DbSet<Verb> Verb { get; set; }
