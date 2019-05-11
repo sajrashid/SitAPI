@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace $ext_safeprojectname$.API
+namespace API
 {
     public class Program
 {
