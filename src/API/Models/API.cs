@@ -13,5 +13,7 @@ namespace dotnetAPI.Models
         [MaxLength(500)]
         public string Url { get; set; }
         public List<Verb> Verbs { get; set; }
+
+
     }
 }

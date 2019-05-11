@@ -11,8 +11,9 @@ namespace dotnetAPI.Models
         [Key]
         public int VerbId { get; set; }
         [MaxLength(50)]
-        public string Name { get; set; }
+        public virtual  string Name { get; set; }
         [MaxLength(500)]
         public string Parameters { get; set; }
+
     }
 }
