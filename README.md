@@ -8,10 +8,14 @@ restore packages
 # Modify connection string 
 appsettings.json
 
+# delete initial migrations folder
+** important
 
-#f rom VS 
+#from VS 
 Tools>PackagaManager Console
+
  Add-Migration InitialCreate
+ 
  Update-Database
  
  # swagger
