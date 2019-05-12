@@ -40,8 +40,6 @@ namespace dotnetAPI.MiddleWare
             else
             {
                 var RemoteIpAddress = context.Connection.RemoteIpAddress.ToString(); //  returns  ::1 if local
-                context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
-
                 bool IsIpInWhiteList = new[] { "serverip", "::1", "string3" }.Contains(RemoteIpAddress);
 
                 if (!IsIpInWhiteList)

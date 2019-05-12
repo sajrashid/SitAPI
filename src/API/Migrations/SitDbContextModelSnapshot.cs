@@ -25,6 +25,10 @@ namespace dotnetAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("CClink")
+                        .IsRequired()
+                        .HasMaxLength(100);
+
                     b.Property<string>("Desc")
                         .IsRequired()
                         .HasMaxLength(1000);

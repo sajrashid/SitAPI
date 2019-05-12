@@ -16,6 +16,9 @@ namespace dotnetAPI.Repository
         [MaxLength(1000)]
         [Required]
         public string Desc { get; set; }
+        [MaxLength(100)]
+        [Required]
+        public string CClink { get; set; }
         [Required]
         public List<Verb> Verbs { get; set; }
         public List<TestResults> TestResults { get; set; }

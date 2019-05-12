@@ -36,6 +36,15 @@ namespace dotnetAPI.Controllers
 
 
         }
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<Api>>> GetAllAPIsWithEntities()
+        //{
+        //    return await _context.API
+        //        .Include(b => b.Verbs)
+        //        .ToListAsync();
+
+
+        //}
 
         // GET: api/Apis/5
         [HttpGet("{id}")]

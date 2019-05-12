@@ -42,6 +42,22 @@ namespace dotnetAPI.Controllers
             return testResults;
         }
 
+        // GET: api/TestResults/5
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<TestResults>> GetTestResultsWIthErrors(int id)
+        //{
+        //    var testResults = await _context.TestResults
+        //         .Include(b => b.Error)
+        //        .FirstOrDefaultAsync(e => e.TestId == id);
+
+        //    if (testResults == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return testResults;
+        //}
+
         // PUT: api/TestResults/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTestResults(int id, TestResults testResults)
