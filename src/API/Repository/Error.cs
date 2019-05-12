@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace dotnetAPI.Repository
 {
-    public class Verb
+    public class Error
     {
         [Key]
-        public int VerbId { get; set; }
-        [MaxLength(50)]
+        public int ErrId { get; set; }
         [Required]
-        public virtual  string Name { get; set; }
-        [MaxLength(500)]
-        public string Parameters { get; set; }
-
-
+        public int TestId { get; set; }
+        [Required]
+        [MaxLength(1000)]
+        public string ErrMsg { get; set; }
+   
     }
 }

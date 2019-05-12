@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using dotnetAPI.Models;
 using Microsoft.Extensions.Logging;
+using dotnetAPI.Repository;
 
 namespace dotnetAPI.Controllers
 {

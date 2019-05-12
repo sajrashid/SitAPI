@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using dotnetAPI.Repository;
 
 namespace dotnetAPI.Models
 {
@@ -27,6 +27,9 @@ namespace dotnetAPI.Models
         public DbSet<Api> API { get; set; }
 
         public DbSet<Verb> Verb { get; set; }
+        public DbSet<TestResults> TestResults { get; set; }
+        public DbSet<Error> Error { get; set; }
+
 
     }
 }

@@ -19,21 +19,73 @@ namespace dotnetAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("dotnetAPI.Models.Api", b =>
+            modelBuilder.Entity("dotnetAPI.Repository.Api", b =>
                 {
                     b.Property<int>("APIId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Desc")
+                        .IsRequired()
+                        .HasMaxLength(1000);
+
                     b.Property<string>("Url")
+                        .IsRequired()
                         .HasMaxLength(500);
 
                     b.HasKey("APIId");
 
+                    b.HasAlternateKey("Url");
+
                     b.ToTable("API");
                 });
 
-            modelBuilder.Entity("dotnetAPI.Models.Verb", b =>
+            modelBuilder.Entity("dotnetAPI.Repository.Error", b =>
+                {
+                    b.Property<int>("ErrId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ErrMsg")
+                        .IsRequired()
+                        .HasMaxLength(1000);
+
+                    b.Property<int>("TestId");
+
+                    b.HasKey("ErrId");
+
+                    b.HasIndex("TestId");
+
+                    b.ToTable("Error");
+                });
+
+            modelBuilder.Entity("dotnetAPI.Repository.TestResults", b =>
+                {
+                    b.Property<int>("TestId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("APIId");
+
+                    b.Property<DateTime>("DateTime");
+
+                    b.Property<int>("FailCount");
+
+                    b.Property<int>("PassCount");
+
+                    b.Property<double>("RespTime");
+
+                    b.Property<int>("StatusCode")
+                        .HasMaxLength(3);
+
+                    b.HasKey("TestId");
+
+                    b.HasIndex("APIId");
+
+                    b.ToTable("TestResults");
+                });
+
+            modelBuilder.Entity("dotnetAPI.Repository.Verb", b =>
                 {
                     b.Property<int>("VerbId")
                         .ValueGeneratedOnAdd()
@@ -42,6 +94,7 @@ namespace dotnetAPI.Migrations
                     b.Property<int?>("APIId");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<string>("Parameters")
@@ -54,9 +107,25 @@ namespace dotnetAPI.Migrations
                     b.ToTable("Verb");
                 });
 
-            modelBuilder.Entity("dotnetAPI.Models.Verb", b =>
+            modelBuilder.Entity("dotnetAPI.Repository.Error", b =>
                 {
-                    b.HasOne("dotnetAPI.Models.Api")
+                    b.HasOne("dotnetAPI.Repository.TestResults")
+                        .WithMany("Error")
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("dotnetAPI.Repository.TestResults", b =>
+                {
+                    b.HasOne("dotnetAPI.Repository.Api")
+                        .WithMany("TestResults")
+                        .HasForeignKey("APIId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("dotnetAPI.Repository.Verb", b =>
+                {
+                    b.HasOne("dotnetAPI.Repository.Api")
                         .WithMany("Verbs")
                         .HasForeignKey("APIId");
                 });

@@ -13,15 +13,19 @@ using Microsoft.AspNetCore.Authentication;
 using Swashbuckle.AspNetCore.Swagger;
 using dotnetAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using dotnetAPI.MiddleWare;
 
 namespace dotnetAPI
 {
     public class Startup
     {
+    
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
+
+       
 
         public IConfiguration Configuration { get; }
 
@@ -35,6 +39,7 @@ namespace dotnetAPI
 
             services.AddDbContext<SitDbContext>(options =>
            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+           
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
@@ -61,15 +66,23 @@ namespace dotnetAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
+            ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            //using (var serviceScope = app.ApplicationServices.CreateScope())
+            //{
+            //    var services = serviceScope.ServiceProvider;
+            //    var myDbContext = services.GetService<SitDbContext>();
+            //   // myDbContext.
+            //}
+
             loggerFactory.AddFile(Configuration.GetSection("Logging"));
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
-            app.UseSwagger();
+          
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
@@ -77,7 +90,16 @@ namespace dotnetAPI
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+            app.UseMiddleware<ErrorHandlingMiddleware>();
+            app.UseMiddleware<IpWhiteListMiddleWare>();
+            // set startup file to index.html for easy testing
+            app.UseDefaultFiles();
+            //added support for static file
+            // 401's on favicons are no more!
+            app.UseStaticFiles();
 
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
             app.UseMvc();
         }
     }

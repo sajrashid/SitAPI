@@ -35,6 +35,8 @@ namespace dotnetAPI
             logging.AddDebug();
             logging.AddEventSourceLogger();
         })
+
+
                 .UseStartup<Startup>();
     }
 }
