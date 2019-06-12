@@ -10,17 +10,32 @@ namespace dotnetAPI.Repository
     {
         [Key]
         public int APIId { get; set; }
+
+        [MaxLength(500)]
+        [Required]
+        public string APIName { get; set; }
+
         [MaxLength(500)]
         [Required]
         public string Url { get; set; }
+
+        [Required]
+        [MaxLength(500)]
+        public String CurlCmd { get; set; }
+
         [MaxLength(1000)]
         [Required]
         public string Desc { get; set; }
+
+        [Required]
+        [Range(typeof(bool), "true", "true", ErrorMessage = "RunTests must be a true or false value")]
+        public bool RunTests { get; set; }
+
         [MaxLength(100)]
         [Required]
         public string CClink { get; set; }
-        [Required]
-        public List<Verb> Verbs { get; set; }
+       
         public List<TestResults> TestResults { get; set; }
+        public List<NinetyDayAverage> NinetyDayAverage { get; set; }
     }
 }

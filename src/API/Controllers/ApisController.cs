@@ -31,7 +31,7 @@ namespace dotnetAPI.Controllers
             _log.LogInformation("Getting API List from DB");
             // return await _context.API.Include.(x => x.Verbs).ToList();
             return await _context.API
-                .Include(b => b.Verbs)
+                //.Include(b => b.Curl)
                 .ToListAsync();
 
 

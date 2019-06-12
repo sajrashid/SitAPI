@@ -1,0 +1,325 @@
+2019-05-20T21:10:29.6480604+00:00 0HLMTCUB66M7C:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/index.html   (ca22a1cb)
+2019-05-20T21:10:29.6480518+00:00 0HLMTCUB66M7D:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50943/  0 (ca22a1cb)
+2019-05-20T21:10:29.7693814+00:00 0HLMTCUB66M7D:00000001 [INF] Request finished in 127.8445ms 200  (791a596a)
+2019-05-20T21:10:30.0536421+00:00 0HLMTCUB66M7C:00000001 [INF] Request finished in 412.3582ms 200 text/html (791a596a)
+2019-05-20T21:10:30.7565762+00:00 0HLMTCUB66M7D:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/v1/swagger.json   (ca22a1cb)
+2019-05-20T21:10:30.9238808+00:00 0HLMTCUB66M7C:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/favicon-32x32.png   (ca22a1cb)
+2019-05-20T21:10:30.9354088+00:00 0HLMTCUB66M7C:00000002 [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2019-05-20T21:10:30.9407794+00:00 0HLMTCUB66M7C:00000002 [INF] Request finished in 16.656ms 200 image/png (791a596a)
+2019-05-20T21:10:31.4891125+00:00 0HLMTCUB66M7D:00000002 [INF] Request finished in 733.4473ms 200 application/json;charset=utf-8 (791a596a)
+2019-05-20T21:23:08.3771203+00:00 0HLMTD5DB2U1T:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50943/  0 (ca22a1cb)
+2019-05-20T21:23:08.3771141+00:00 0HLMTD5DB2U1S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/index.html   (ca22a1cb)
+2019-05-20T21:23:08.4460725+00:00 0HLMTD5DB2U1T:00000001 [INF] Request finished in 74.7095ms 200  (791a596a)
+2019-05-20T21:23:08.5738848+00:00 0HLMTD5DB2U1S:00000001 [INF] Request finished in 207.1849ms 200 text/html (791a596a)
+2019-05-20T21:23:08.8823072+00:00 0HLMTD5DB2U1T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/v1/swagger.json   (ca22a1cb)
+2019-05-20T21:23:09.1965148+00:00 0HLMTD5DB2U1T:00000002 [INF] Request finished in 314.6866ms 200 application/json;charset=utf-8 (791a596a)
+2019-05-20T22:15:57.0208964+00:00 0HLMTE2TL6P5Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/index.html   (ca22a1cb)
+2019-05-20T22:15:57.0240840+00:00 0HLMTE2TL6P5P:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50943/  0 (ca22a1cb)
+2019-05-20T22:15:57.1231611+00:00 0HLMTE2TL6P5P:00000001 [INF] Request finished in 110.9846ms 200  (791a596a)
+2019-05-20T22:15:57.3055229+00:00 0HLMTE2TL6P5Q:00000001 [INF] Request finished in 301.1854ms 200 text/html (791a596a)
+2019-05-20T22:15:57.5111543+00:00 0HLMTE2TL6P5P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/v1/swagger.json   (ca22a1cb)
+2019-05-20T22:15:58.0323962+00:00 0HLMTE2TL6P5P:00000002 [INF] Request finished in 508.6341ms 200 application/json;charset=utf-8 (791a596a)
+2019-05-20T22:16:20.1255920+00:00 0HLMTE2TL6P5Q:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 551 (ca22a1cb)
+2019-05-20T22:16:20.2650961+00:00 0HLMTE2TL6P5Q:00000002 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:16:20.8017047+00:00 0HLMTE2TL6P5Q:00000002 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 526.8678ms (afa2e885)
+2019-05-20T22:16:20.9040116+00:00 0HLMTE2TL6P5Q:00000002 [INF] Request finished in 779.8235ms 500 application/json (791a596a)
+2019-05-20T22:20:10.5141481+00:00 0HLMTE2TL6P5R:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 146 (ca22a1cb)
+2019-05-20T22:20:10.5177361+00:00 0HLMTE2TL6P5R:00000001 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:20:10.5449096+00:00 0HLMTE2TL6P5R:00000001 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:20:10.8008003+00:00 0HLMTE2TL6P5R:00000001 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:20:11.3870857+00:00 0HLMTE2TL6P5R:00000001 [ERR] Failed executing DbCommand ("35"ms) [Parameters=["@p0='?' (Size = 500), @p1='?' (Size = 100), @p2='?' (Size = 500), @p3='?' (Size = 1000), @p4='?' (DbType = Boolean), @p5='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [APIId]
+FROM [API]
+WHERE @@ROWCOUNT = 1 AND [APIId] = scope_identity();" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:010f9e44-796a-4334-942f-1abd3621f53c
+Error Number:207,State:1,Class:16
+2019-05-20T22:20:11.4218634+00:00 0HLMTE2TL6P5R:00000001 [ERR] An exception occurred in the database while saving changes for context type '"dotnetAPI.Models.SitDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at dotnetAPI.Controllers.ApisController.PostApi(Api api) in C:\Users\Saj\source\repos\SitAPI\src\API\Controllers\ApisController.cs:line 98
+2019-05-20T22:20:11.4960225+00:00 0HLMTE2TL6P5R:00000001 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 975.2255ms (afa2e885)
+2019-05-20T22:20:11.6697567+00:00 0HLMTE2TL6P5R:00000001 [INF] Request finished in 1154.9448ms 500 application/json (791a596a)
+2019-05-20T22:20:36.7443627+00:00 0HLMTE2TL6P5R:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 145 (ca22a1cb)
+2019-05-20T22:20:36.7474933+00:00 0HLMTE2TL6P5R:00000002 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:20:36.7511304+00:00 0HLMTE2TL6P5R:00000002 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:20:36.7591089+00:00 0HLMTE2TL6P5R:00000002 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:20:36.7936345+00:00 0HLMTE2TL6P5R:00000002 [ERR] Failed executing DbCommand ("15"ms) [Parameters=["@p0='?' (Size = 500), @p1='?' (Size = 100), @p2='?' (Size = 500), @p3='?' (Size = 1000), @p4='?' (DbType = Boolean), @p5='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [APIId]
+FROM [API]
+WHERE @@ROWCOUNT = 1 AND [APIId] = scope_identity();" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:010f9e44-796a-4334-942f-1abd3621f53c
+Error Number:207,State:1,Class:16
+2019-05-20T22:20:36.8118791+00:00 0HLMTE2TL6P5R:00000002 [ERR] An exception occurred in the database while saving changes for context type '"dotnetAPI.Models.SitDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-05-20T22:20:36.8686559+00:00 0HLMTE2TL6P5R:00000002 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 114.7417ms (afa2e885)
+2019-05-20T22:20:37.0093984+00:00 0HLMTE2TL6P5R:00000002 [INF] Request finished in 266.8112ms 500 application/json (791a596a)
+2019-05-20T22:20:51.8260045+00:00 0HLMTE2TL6P5R:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 145 (ca22a1cb)
+2019-05-20T22:20:51.8284328+00:00 0HLMTE2TL6P5R:00000003 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:20:51.8312261+00:00 0HLMTE2TL6P5R:00000003 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:20:51.8336654+00:00 0HLMTE2TL6P5R:00000003 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:20:51.8519127+00:00 0HLMTE2TL6P5R:00000003 [ERR] Failed executing DbCommand ("7"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (Size = 100), @p3='?' (Size = 500), @p4='?' (Size = 1000), @p5='?' (DbType = Boolean), @p6='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIId], [APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:010f9e44-796a-4334-942f-1abd3621f53c
+Error Number:207,State:1,Class:16
+2019-05-20T22:20:51.8687996+00:00 0HLMTE2TL6P5R:00000003 [ERR] An exception occurred in the database while saving changes for context type '"dotnetAPI.Models.SitDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'APIName'.
+Invalid column name 'CurlCmd'.
+Invalid column name 'RunTests'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at dotnetAPI.Controllers.ApisController.PostApi(Api api) in C:\Users\Saj\source\repos\SitAPI\src\API\Controllers\ApisController.cs:line 98
+2019-05-20T22:20:51.9165867+00:00 0HLMTE2TL6P5R:00000003 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 83.3699ms (afa2e885)
+2019-05-20T22:20:52.0581710+00:00 0HLMTE2TL6P5R:00000003 [INF] Request finished in 229.5068ms 500 application/json (791a596a)
+2019-05-20T22:21:50.0170231+00:00 0HLMTE66RPRK3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/index.html   (ca22a1cb)
+2019-05-20T22:21:50.0163666+00:00 0HLMTE66RPRK4:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:50943/  0 (ca22a1cb)
+2019-05-20T22:21:50.0938051+00:00 0HLMTE66RPRK4:00000001 [INF] Request finished in 89.7845ms 200  (791a596a)
+2019-05-20T22:21:50.2419025+00:00 0HLMTE66RPRK3:00000001 [INF] Request finished in 242.2816ms 200 text/html (791a596a)
+2019-05-20T22:21:50.5025730+00:00 0HLMTE66RPRK4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:50943/swagger/v1/swagger.json   (ca22a1cb)
+2019-05-20T22:21:51.1651966+00:00 0HLMTE66RPRK4:00000002 [INF] Request finished in 660.6316ms 200 application/json;charset=utf-8 (791a596a)
+2019-05-20T22:22:02.1900742+00:00 0HLMTE66RPRK3:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 551 (ca22a1cb)
+2019-05-20T22:22:02.3004980+00:00 0HLMTE66RPRK3:00000002 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:22:02.6585008+00:00 0HLMTE66RPRK3:00000002 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 339.2319ms (afa2e885)
+2019-05-20T22:22:02.7741167+00:00 0HLMTE66RPRK3:00000002 [INF] Request finished in 570.5994ms 500 application/json (791a596a)
+2019-05-20T22:22:22.2453227+00:00 0HLMTE66RPRK4:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 143 (ca22a1cb)
+2019-05-20T22:22:22.2482483+00:00 0HLMTE66RPRK4:00000003 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:22:22.2628030+00:00 0HLMTE66RPRK4:00000003 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:22:22.5195119+00:00 0HLMTE66RPRK4:00000003 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:22:22.9218316+00:00 0HLMTE66RPRK4:00000003 [INF] Executed DbCommand ("44"ms) [Parameters=["@p0='?' (Size = 500), @p1='?' (Size = 100), @p2='?' (Size = 500), @p3='?' (Size = 1000), @p4='?' (DbType = Boolean), @p5='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [APIId]
+FROM [API]
+WHERE @@ROWCOUNT = 1 AND [APIId] = scope_identity();" (0723d8ff)
+2019-05-20T22:22:22.9711087+00:00 0HLMTE66RPRK4:00000003 [INF] Executed action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtActionResult" in 698.3147ms. (50a9e262)
+2019-05-20T22:22:22.9864652+00:00 0HLMTE66RPRK4:00000003 [INF] Executing ObjectResult, writing value of type '"dotnetAPI.Repository.Api"'. (8a1b66c8)
+2019-05-20T22:22:23.0094939+00:00 0HLMTE66RPRK4:00000003 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 758.5591ms (afa2e885)
+2019-05-20T22:22:23.0181656+00:00 0HLMTE66RPRK4:00000003 [INF] Request finished in 772.9435ms 201 application/json; charset=utf-8 (791a596a)
+2019-05-20T22:22:31.4194611+00:00 0HLMTE66RPRK3:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 143 (ca22a1cb)
+2019-05-20T22:22:31.4226328+00:00 0HLMTE66RPRK3:00000003 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:22:31.4261250+00:00 0HLMTE66RPRK3:00000003 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:22:31.4411913+00:00 0HLMTE66RPRK3:00000003 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:22:31.4668302+00:00 0HLMTE66RPRK3:00000003 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 500), @p1='?' (Size = 100), @p2='?' (Size = 500), @p3='?' (Size = 1000), @p4='?' (DbType = Boolean), @p5='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [APIId]
+FROM [API]
+WHERE @@ROWCOUNT = 1 AND [APIId] = scope_identity();" (0723d8ff)
+2019-05-20T22:22:31.4897034+00:00 0HLMTE66RPRK3:00000003 [INF] Executed action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtActionResult" in 51.657ms. (50a9e262)
+2019-05-20T22:22:31.4932838+00:00 0HLMTE66RPRK3:00000003 [INF] Executing ObjectResult, writing value of type '"dotnetAPI.Repository.Api"'. (8a1b66c8)
+2019-05-20T22:22:31.4979426+00:00 0HLMTE66RPRK3:00000003 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 71.339ms (afa2e885)
+2019-05-20T22:22:31.5018563+00:00 0HLMTE66RPRK3:00000003 [INF] Request finished in 81.855ms 201 application/json; charset=utf-8 (791a596a)
+2019-05-20T22:22:42.1598229+00:00 0HLMTE66RPRK4:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 143 (ca22a1cb)
+2019-05-20T22:22:42.1624236+00:00 0HLMTE66RPRK4:00000004 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:22:42.1657858+00:00 0HLMTE66RPRK4:00000004 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:22:42.1688366+00:00 0HLMTE66RPRK4:00000004 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:22:42.2510876+00:00 0HLMTE66RPRK4:00000004 [ERR] Failed executing DbCommand ("16"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (Size = 100), @p3='?' (Size = 500), @p4='?' (Size = 1000), @p5='?' (DbType = Boolean), @p6='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIId], [APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);" (627a98df)
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'API' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:e0a2bb04-c78e-42dd-be7a-0bf5c071793e
+Error Number:544,State:1,Class:16
+2019-05-20T22:22:42.2688132+00:00 0HLMTE66RPRK4:00000004 [ERR] An exception occurred in the database while saving changes for context type '"dotnetAPI.Models.SitDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'API' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert explicit value for identity column in table 'API' when IDENTITY_INSERT is set to OFF.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at dotnetAPI.Controllers.ApisController.PostApi(Api api) in C:\Users\Saj\source\repos\SitAPI\src\API\Controllers\ApisController.cs:line 98
+2019-05-20T22:22:42.3522742+00:00 0HLMTE66RPRK4:00000004 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 183.8872ms (afa2e885)
+2019-05-20T22:22:42.5411744+00:00 0HLMTE66RPRK4:00000004 [INF] Request finished in 373.7576ms 500 application/json (791a596a)
+2019-05-20T22:22:51.2361802+00:00 0HLMTE66RPRK3:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 129 (ca22a1cb)
+2019-05-20T22:22:51.2386515+00:00 0HLMTE66RPRK3:00000004 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:22:51.2419108+00:00 0HLMTE66RPRK3:00000004 [INF] Executing action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" - Validation state: Valid (dad538d7)
+2019-05-20T22:22:51.2520632+00:00 0HLMTE66RPRK3:00000004 [INF] Entity Framework Core "2.2.4-servicing-10062" initialized '"SitDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None" (9958f5bb)
+2019-05-20T22:22:51.2633824+00:00 0HLMTE66RPRK3:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 500), @p1='?' (Size = 100), @p2='?' (Size = 500), @p3='?' (Size = 1000), @p4='?' (DbType = Boolean), @p5='?' (Size = 500)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [API] ([APIName], [CClink], [CurlCmd], [Desc], [RunTests], [Url])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+SELECT [APIId]
+FROM [API]
+WHERE @@ROWCOUNT = 1 AND [APIId] = scope_identity();" (0723d8ff)
+2019-05-20T22:22:51.2795085+00:00 0HLMTE66RPRK3:00000004 [INF] Executed action method "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)", returned result "Microsoft.AspNetCore.Mvc.CreatedAtActionResult" in 23.5312ms. (50a9e262)
+2019-05-20T22:22:51.2857236+00:00 0HLMTE66RPRK3:00000004 [INF] Executing ObjectResult, writing value of type '"dotnetAPI.Repository.Api"'. (8a1b66c8)
+2019-05-20T22:22:51.2908523+00:00 0HLMTE66RPRK3:00000004 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 47.7588ms (afa2e885)
+2019-05-20T22:22:51.2966923+00:00 0HLMTE66RPRK3:00000004 [INF] Request finished in 58.1917ms 201 application/json; charset=utf-8 (791a596a)
+2019-05-20T22:24:07.9779916+00:00 0HLMTE66RPRK5:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:50943/api/Apis application/json-patch+json 130 (ca22a1cb)
+2019-05-20T22:24:07.9926664+00:00 0HLMTE66RPRK5:00000001 [INF] Route matched with "{action = \"PostApi\", controller = \"Apis\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[dotnetAPI.Repository.Api]] PostApi(dotnetAPI.Repository.Api)" on controller "dotnetAPI.Controllers.ApisController" ("dotnetAPI"). (122b2fdf)
+2019-05-20T22:24:08.0018200+00:00 0HLMTE66RPRK5:00000001 [INF] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.SerializableError"'. (8a1b66c8)
+2019-05-20T22:24:08.0068660+00:00 0HLMTE66RPRK5:00000001 [INF] Executed action "dotnetAPI.Controllers.ApisController.PostApi (dotnetAPI)" in 10.9875ms (afa2e885)
+2019-05-20T22:24:08.0111027+00:00 0HLMTE66RPRK5:00000001 [INF] Request finished in 50.2982ms 400 application/json; charset=utf-8 (791a596a)

@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace dotnetAPI.Repository
 {
-    public class Verb
+    public class NinetyDayAverage
     {
         [Key]
-        public int VerbId { get; set; }
-        [MaxLength(50)]
+        public int AvgId { get; set; }
         [Required]
-        public virtual  string Name { get; set; }
-        [MaxLength(500)]
-        public string Parameters { get; set; }
-
-
+        public double AvgRespTime { get; set; }
     }
 }

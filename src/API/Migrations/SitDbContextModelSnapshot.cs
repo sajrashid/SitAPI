@@ -25,13 +25,23 @@ namespace dotnetAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("APIName")
+                        .IsRequired()
+                        .HasMaxLength(500);
+
                     b.Property<string>("CClink")
                         .IsRequired()
                         .HasMaxLength(100);
 
+                    b.Property<string>("CurlCmd")
+                        .IsRequired()
+                        .HasMaxLength(500);
+
                     b.Property<string>("Desc")
                         .IsRequired()
                         .HasMaxLength(1000);
+
+                    b.Property<bool>("RunTests");
 
                     b.Property<string>("Url")
                         .IsRequired()
@@ -63,6 +73,23 @@ namespace dotnetAPI.Migrations
                     b.ToTable("Error");
                 });
 
+            modelBuilder.Entity("dotnetAPI.Repository.NinetyDayAverage", b =>
+                {
+                    b.Property<int>("AvgId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("APIId");
+
+                    b.Property<double>("AvgRespTime");
+
+                    b.HasKey("AvgId");
+
+                    b.HasIndex("APIId");
+
+                    b.ToTable("NinetyDayAverage");
+                });
+
             modelBuilder.Entity("dotnetAPI.Repository.TestResults", b =>
                 {
                     b.Property<int>("TestId")
@@ -89,28 +116,6 @@ namespace dotnetAPI.Migrations
                     b.ToTable("TestResults");
                 });
 
-            modelBuilder.Entity("dotnetAPI.Repository.Verb", b =>
-                {
-                    b.Property<int>("VerbId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("APIId");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(50);
-
-                    b.Property<string>("Parameters")
-                        .HasMaxLength(500);
-
-                    b.HasKey("VerbId");
-
-                    b.HasIndex("APIId");
-
-                    b.ToTable("Verb");
-                });
-
             modelBuilder.Entity("dotnetAPI.Repository.Error", b =>
                 {
                     b.HasOne("dotnetAPI.Repository.TestResults")
@@ -119,19 +124,19 @@ namespace dotnetAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("dotnetAPI.Repository.NinetyDayAverage", b =>
+                {
+                    b.HasOne("dotnetAPI.Repository.Api")
+                        .WithMany("NinetyDayAverage")
+                        .HasForeignKey("APIId");
+                });
+
             modelBuilder.Entity("dotnetAPI.Repository.TestResults", b =>
                 {
                     b.HasOne("dotnetAPI.Repository.Api")
                         .WithMany("TestResults")
                         .HasForeignKey("APIId")
                         .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("dotnetAPI.Repository.Verb", b =>
-                {
-                    b.HasOne("dotnetAPI.Repository.Api")
-                        .WithMany("Verbs")
-                        .HasForeignKey("APIId");
                 });
 #pragma warning restore 612, 618
         }

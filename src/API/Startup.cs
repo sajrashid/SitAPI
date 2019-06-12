@@ -89,6 +89,7 @@ namespace dotnetAPI
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.ShowExtensions();
             });
             app.UseMiddleware<ErrorHandlingMiddleware>();
             app.UseMiddleware<IpWhiteListMiddleWare>();
