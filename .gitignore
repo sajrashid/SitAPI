@@ -328,6 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
-/src/API/Logs/log-20190511.txt
 /src/API/Migrations/
-/src/API/Logs/log-20190512.txt
+*.txt
